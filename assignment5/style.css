@@ -1,0 +1,130 @@
+/* ---- Page background ---- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: url("a5bg.png") repeat;
+}
+
+/* ---- Outer centered page panel ---- */
+#page {
+  width: 900px;                 /* matches screenshot proportions */
+  margin: 40px auto;
+  padding: 18px;                /* shows the patterned bands inside */
+  border: 2px solid #4a4a4a;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+  background: transparent;      /* keep pattern visible between blocks */
+}
+
+/* ---- Header bar ---- */
+#top {
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+}
+
+#top h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;          /* not bold */
+  font-size: 34px;
+  color: #000;
+}
+
+/*  Navigation  */
+#mainnav {
+  margin-bottom: 18px;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 18px;                    /* spacing between boxes like screenshot */
+}
+
+.nav a {
+  display: block;
+  min-width: 118px;
+  padding: 10px 14px;
+
+  background: #0a168b;          /* dark blue */
+  border: 1px solid #040b4d;
+  color: #ffffff;
+
+  font-family: Georgia, "Times New Roman", serif; /* matches screenshot look */
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background: #2d45ff;          /* lighter blue hover (example2) */
+}
+
+/*  Main content panel  */
+#content {
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  padding: 22px 26px 26px 26px;
+  margin-bottom: 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  color: #000;
+}
+
+#content h2 {
+  margin: 0 0 10px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/* Thick rule under h2 (NO <hr>) */
+#content h2::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  border-bottom: 3px solid #111;
+}
+
+#content p {
+  margin: 12px 0 0 0;
+  text-align: justify;
+  line-height: 1.35;
+}
+
+/* Content links: blue bold no underline; red underline on hover */
+#content a:link,
+#content a:visited {
+  color: #0000ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#content a:hover,
+#content a:active {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* ---- Footer ---- */
+#footer p {
+  margin: 0;
+
+  background: #0a168b;
+  border: 4px solid #ffffff;                 /* white outer border */
+  box-shadow: inset 0 0 0 2px #7aa0d6;       /* inner border line */
+  padding: 24px 28px;
+
+  color: #ffffff;
+  text-align: center;
+
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
