@@ -1,0 +1,58 @@
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  background: #444;
+  padding: 8px;
+}
+
+/* link colors  */
+a:link { color: red; }
+a:hover { color: yellow; }
+a:visited { color: green; }
+
+/* div  */
+#contactBox {
+  border: 2px solid #999;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* span  */
+.highlight {
+  background: #ffeb99;
+  padding: 2px 6px;
+}
+/* All text Helvetica/Arial */
+body {
+  font-family: Helvetica;
+
+  /* Background image requirement */
+  background-image: url("images/background.jpg");
+  background-repeat: repeat;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headings: */
+h1, h2, h3, h4, h5, h6 {
+  color: orange;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Center  */
+.centerText {
+  text-align: center;
+}
+
+/* Justify  */
+.justifyText {
+  text-align: justify;
+}
+
+/* Images: heavy black border + yellow between border and image */
+img {
+  border: 10px solid black; /* heavy */
+  padding: 10px;            /* space between border and image */
+  background: yellow;       /* makes that space yellow */
+}
